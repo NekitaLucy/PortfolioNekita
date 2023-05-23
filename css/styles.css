@@ -13,6 +13,10 @@ Colors used:
 Primary Color (lightpink): #FBF3F6;
 Secondary Color (purple): #4A0217;
 */
+img {
+    width: 100%;
+}
+
 
 html {
     line-height: 1.15;

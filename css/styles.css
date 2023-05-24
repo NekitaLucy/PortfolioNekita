@@ -23,7 +23,7 @@ Secondary Color ():
     width: 100%;
 }
 
-<a href="#" class="button">Read more</a>.button {
+.button {
     display: inline-block;
     /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #ff7f50;

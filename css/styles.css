@@ -75,7 +75,8 @@ html {
 body {
 
     background-color: #FBF3F6;
-    font-family: 'Smooch Sans', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     /* Sets the font size to 16px */
     font-weight: 300;
@@ -95,22 +96,28 @@ h4 {
 }
 
 h1 {
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 2.75em;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-style: regular;
+    font-size: 30px;
+    font-style: Bold;
     font-weight: 700;
 }
 
 h2 {
-    font-size: 2.25em;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 27px;
+    font-style: SemiBold;
     font-weight: 700;
 }
 
 h3 {
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.75em;
     font-weight: 400;
 }
 
 h4 {
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.35em;
     font-weight: 400;
 }
@@ -129,17 +136,12 @@ main {
    * `article` contexts in Chrome, Firefox, and Safari.
    */
 
-h1 {
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 30px;
-    font-style: Bold;
-}
 
 p {
-    font-family: 'Smooch Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 2;
     font-size: 16px;
-    font-style: Regular;
+    font-style: regular;
 }
 
 /* Grouping content

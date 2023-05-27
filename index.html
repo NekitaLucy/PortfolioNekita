@@ -19,25 +19,25 @@
 
 <body>
     <header>
-        <img src="logo.svg" alt="logo">
-    </header>
-    <div>
-        <!-- For the navigation-->
-        <nav>
-            <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About Nekita Surman</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="about.html#skills">My Skills</a></li>
-            </ul>
-        </nav>
-    </div>
+        <div class="container">
+            <img src="logo.svg" alt="logo">
+            <div>
+                <!-- For the navigation-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="about.html#skills">My Skills</a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
 
     <main>
         <!-- For the hero section -->
-        <div class=container>
-            <div class="hero">
+        <div id="hero">
+            <div class="container">
                 <h1>Welcome to my work</h1>
                 <p>Hi, I'm Nekita Surman
                     <br>a UX/UI designer specializing in UI design based in Montreal, Canada.
@@ -46,74 +46,83 @@
         </div>
 
         <!-- projects -->
-        <div>
+
+        <div id="work">
             <div class="container">
-                <h2>My work</h2>
-                <h3>Power-Up</h3>
-                <div>
-                    <picture>
-                        <source srcset="img/power_up/coverpagem.jpg" media="(max-width:767px)">
-                        <img src="img/power_up/coverpaged.jpg" alt="coverpage for productivity app">
-                    </picture>
+                <h2>My Work</h2>
+                <div class="row">
 
-                </div>
-            </div>
+                    <h3>Power-Up</h3>
+                    <div>
+                        <picture>
+                            <source srcset="img/power_up/coverpagem.jpg" media="(max-width:767px)">
+                            <img src="img/power_up/coverpaged.jpg" alt="coverpage for productivity app">
+                        </picture>
 
-            <div>
-                <p>Power-Up, the user-friendly habit tracker app, incorporates a unique feature offering three
-                    distinct
-                    productivity levels. This design allows users to seamlessly balance their to-do lists and
-                    add
-                    new
-                    habits, fostering a balanced and productive lifestyle.</p>
-                <p>Using mood boards to brainstorm ideas on the design and testing user preferences between two
-                    main
-                    styles
-                    helped me hone in on my current design for the productivity app.
-                </p>
-                <nav>
-                    <a href="#">View my Project</a>
-                </nav>
-            </div>
-        </div>
-        </div>
-
-        <div>
-            <div>
-                <h3>Skin Remedy</h3>
-                <div>
-                    <picture>
-                        <source srcset="img/skin_remedy/mobile.jpg" media="(max-width:767px)">
-                        <img src="img/skin_remedy/desktop.jpg" alt="coverpage for skin care app">
-                    </picture>
-
+                    </div>
                 </div>
 
-                <div>
 
-                    <p>Skin Remedy, a skincare app, was designed to focus on ingredient compatibility. Through
-                        in-depth
-                        research
-                        and analysis, the app provides users personalized recommendations, helping them navigate the
-                        complex
-                        world of skincare ingredients and find the perfect remedies for their skin.
-                    </p>
-                    <p>Prototype testing the high-fidelity mobile frames with five testers gave me helpful feedback
-                        to
-                        improve
-                        the design and functionality of the app..
+                <div class="container">
+                    <p>Power-Up, the user-friendly habit tracker app, incorporates a unique feature offering three
+                        distinct
+                        productivity levels. This design allows users to seamlessly balance their to-do lists and
+                        add
+                        new
+                        habits, fostering a balanced and productive lifestyle.</p>
+                    <p>Using mood boards to brainstorm ideas on the design and testing user preferences between two
+                        main
+                        styles
+                        helped me hone in on my current design for the productivity app.
                     </p>
                     <nav>
-                        <a href="#">View my Project</a>
+                        <a href="powerup.html"> View my Project</a>
                     </nav>
                 </div>
             </div>
         </div>
+
+        <div id="work">
+            <div class="container">
+
+                <div class="row">
+                    <div class="container">
+                        <h3>Skin Remedy</h3>
+                        <div>
+                            <picture>
+                                <source srcset="img/skin_remedy/mobile.jpg" media="(max-width:767px)">
+                                <img src="img/skin_remedy/desktop.jpg" alt="coverpage for skin care app">
+                            </picture>
+
+                        </div>
+
+                        <div>
+
+                            <p>Skin Remedy, a skincare app, was designed to focus on ingredient compatibility. Through
+                                in-depth
+                                research
+                                and analysis, the app provides users personalized recommendations, helping them navigate
+                                the
+                                complex
+                                world of skincare ingredients and find the perfect remedies for their skin.
+                            </p>
+                            <p>Prototype testing the high-fidelity mobile frames with five testers gave me helpful
+                                feedback
+                                to
+                                improve
+                                the design and functionality of the app..
+                            </p>
+                            <nav>
+                                <a href="#">View my Project</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
     </main>
 
 
     <footer id="contact">
-        <div>
+        <div class="container">
             <h2>Get in Touch</h2>
             <p>like my work and want to discuss opportunities? Let's connect
             </p>

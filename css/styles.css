@@ -537,6 +537,7 @@ nav>ul>li>a {
 nav>ul>li>a {
     padding: 0 15px;
     text-transform: uppercase;
+    text-align: right;
     font-weight: 700;
     width: 100%;
     text-decoration: #ffff;

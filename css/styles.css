@@ -39,7 +39,32 @@ Secondary Color ():
     opacity: 0.9;
     /* Reduces the opacity of the button to 80% */
     text-decoration: none;
+    background-color: #dfe20c;
+
 }
+
+div {
+    transition-timing-function: linear;
+    transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
+    .button {
+        display: inline-block;
+        background-color: #ff7f50;
+        color: white;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        border-bottom: 2px solid #994c30;
+        transition: 0.2s opacity;
+    }
+
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
 
 .button.contact {
     background-color: transparent;
@@ -283,6 +308,10 @@ sup {
 
 img {
     border-style: none;
+    width: auto;
+    max-width: auto;
+    height: 50%;
+
 }
 
 /* Forms
@@ -540,7 +569,11 @@ nav>ul>li>a {
     text-align: right;
     font-weight: 700;
     width: 100%;
-    text-decoration: #ffff;
+
+}
+
+.nav>li>a {
+    color: #F8F8F8;
 }
 
 .css-box-shadow {
@@ -588,9 +621,6 @@ footer {
     box-sizing: border-box;
 }
 
-/* img {
-    width: 100%;
-}
 
 .container {
     max-width: 1200px;
@@ -599,7 +629,6 @@ footer {
 selector {
     margin: 0 auto;
     /* No spacing to top and bottom and auto spacing to left and right */
-}
 
 selector {
     position: relative;
@@ -627,5 +656,181 @@ header {
 border-bottom: 3px solid #4a4a4a;
 
 margin: 10px;
+
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    #hero span {
+        text-align: center display: block;
+    }
+
+    #about-page h3 {
+        margin-top: 0;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    [class*="col-"] {
+        float: left;
+    }
+
+    .row:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #hero span {
+        text-align: center display: block;
+    }
+
+    #about-page h3 {
+        margin-top: 0;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .col-lg-5 {
+        width: 100%;
+    }
+
+    .col-lg-7 {
+        width: 100%;
+    }
+
+    [class*="col-"] {
+        float: left;
+    }
+
+    .row:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {}
+
+@keyframes color-change {
+    @keyframes color-change {
+        0% {
+            fill: #edc655;
+        }
+
+        50% {
+            fill: #fcffad;
+        }
+
+        100% {
+            fill: #f76414;
+        }
+    }
+
+    .sun {
+        animation: 4s color-change infinite alternate linear;
+    }
+
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+
+    .cloud-front {
+        animation: 30s cloud-move infinite alternate linear;
+    }
+
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+
+    .cloud-back {
+        animation: 34s cloud-move-reverse infinite alternate linear;
+    }
 
 }

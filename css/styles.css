@@ -551,6 +551,7 @@ template {
 
 .profilepic {
     max-width: 450px;
+    float: left;
 }
 
 header {

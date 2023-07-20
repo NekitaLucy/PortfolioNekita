@@ -264,9 +264,10 @@ h4 {
 
 h5 {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 17px;
   font-style: SemiBold;
-  font-weight: 400;
+  font-size: 17px;
+  margin: 0 0 0 0;
+ 
 }
 
 
@@ -291,6 +292,11 @@ p {
   line-height: 2;
   font-style: light300;
   font-size: 17px;
+ 
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0.1em; /* Adjust the value as per your requirement */
 }
 
 /* Grouping content
@@ -417,8 +423,24 @@ sup {
    * Remove the border on images inside links in IE 10.
    */
 
+/**
+   * code for setting images side by side.
+   */
 
 
+   .columnimg {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .rowimg::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
    
 img {
   width: 100%;
@@ -648,11 +670,17 @@ template {
   /* Centers text */
 }
 
+.mediumimg {
+  max-width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .behance {
   max-width: 30px;
   padding: 15px;
   margin-top: 20px;
-
   padding-left: 10px;
 }
 
@@ -681,6 +709,7 @@ template {
   max-width: 450px;
   float: left;
 }
+ 
 
 .coverimg {max-width: 100%;
   height: auto;
@@ -750,6 +779,7 @@ nav > ul > li > a {
   /* 25px top and bottom, 0 left and right */
 }
 
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #2a186b;
@@ -786,6 +816,17 @@ selector {
 
 .text-center {
   text-align: center;
+}
+.projectimg { width: 950px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wireframes { width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*how we can set a specific width and height for an element-->*/
@@ -888,6 +929,8 @@ Large devices (1024px or larger)
   header {
     padding: 10px 0 13px;
   }
+
+
 
   .container {
     max-width: 1200px;
